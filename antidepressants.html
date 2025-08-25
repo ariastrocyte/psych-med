@@ -1,0 +1,693 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>抗抑郁药物 - 精神药品快速指南</title>
+</head>
+
+<body class="bg-green-50 min-h-screen">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="/" class="text-xl font-bold text-indigo-600">请选择您想要了解的分类</a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="/"
+                            class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">主页</a>
+                        <a href="/antidepressants.html"
+                            class="text-indigo-600 bg-indigo-50 px-3 py-2 rounded-md text-sm font-medium">抗抑郁药物</a>
+                        <a href="/bipolar.html"
+                            class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">双相药物</a>
+                        <a href="/stimulants.html"
+                            class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">中枢兴奋剂</a>
+                        <a href="/antipsychotics.html"
+                            class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">抗精神病药物</a>
+                        <a href="/anti-anxiety.html"
+                            class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">抗焦虑药物</a>
+                        <a href="/hypnotics.html"
+                            class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">安眠药</a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button"
+                        class="text-gray-700 hover:text-indigo-600 focus:outline-none focus:text-indigo-600">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-50">
+                    <a href="/" class="text-gray-700 block px-3 py-2 rounded-md text-base font-medium">主页</a>
+                    <a href="/antidepressants.html"
+                        class="text-indigo-600 bg-indigo-50 block px-3 py-2 rounded-md text-base font-medium">抗抑郁药物</a>
+                    <a href="/bipolar.html"
+                        class="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">双相药物</a>
+                    <a href="/stimulants.html"
+                        class="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">中枢兴奋剂</a>
+                    <a href="/antipsychotics.html"
+                        class="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">抗精神病药物</a>
+                    <a href="/anti-anxiety.html"
+                        class="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">抗焦虑药物</a>
+                    <a href="/hypnotics.html"
+                        class="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">安眠药</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <!-- Icon -->
+                <div class="flex justify-center mb-6">
+                    <div class="bg-white rounded-full p-4 shadow-lg">
+                        <svg class="h-16 w-16 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Title -->
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                    Antidepressants
+                    <span class="block text-green-600 text-3xl md:text-4xl mt-2">抗抑郁药物</span>
+                </h1>
+
+                <!-- Description -->
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    常用于治疗抑郁及相关障碍的药物信息速查表
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <!-- Search and Filter -->
+        <div class="mb-8">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div
+                    class="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0 md:space-x-4">
+                    <!-- Search -->
+                    <div class="flex-1">
+                        <label for="search" class="block text-sm font-medium text-gray-700 mb-2">搜索药物</label>
+                        <input type="text" id="search" placeholder="输入通用名或商品名..."
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                    </div>
+
+                    <!-- Category Filter -->
+                    <div class="flex-shrink-0">
+                        <label for="category" class="block text-sm font-medium text-gray-700 mb-2">药物分类</label>
+                        <select id="category"
+                            class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                            <option value="">全部分类</option>
+                            <option value="typical">常用的抗抑郁药</option>
+                            <option value="atypical">非典型抗抑郁药</option>
+                            <option value="maoi">MAO抑制剂</option>
+                        </select>
+                    </div>
+
+                    <!-- Quick Stats -->
+                    <div class="flex-shrink-0">
+                        <div class="bg-green-50 rounded-lg p-4">
+                            <div class="text-sm text-gray-600">共收录</div>
+                            <div class="text-2xl font-bold text-green-600">27</div>
+                            <div class="text-sm text-gray-600">种抗抑郁药</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Main Antidepressants Table -->
+        <div class="mb-12 bg-white rounded-lg shadow-lg overflow-hidden" data-category="typical">
+            <div class="bg-gradient-to-r from-green-600 to-emerald-600 px-6 py-4">
+                <h2 class="text-xl font-semibold text-white">常用的抗抑郁药</h2>
+                <p class="text-sm text-green-100 mt-1">注：抗胆碱副作用（Anticholinergic Side
+                    Effect）：药物抑制乙酰胆碱(acetylcholine)正常作用时所引起的副作用（口干，视力模糊，心跳加快，皮肤潮红干燥，排尿/排便困难，意识混乱，记忆力减退等）</p>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                通用名</th>
+                            <th class="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                商品名</th>
+                            <th class="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                每日剂量</th>
+                            <th class="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                镇静</th>
+                            <th class="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                抗胆碱副作用</th>
+                            <th class="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                去甲肾上腺素(NE)</th>
+                            <th class="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                血清素(5-HT)</th>
+                            <th class="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                多巴胺(DA)</th>
+                            <th class="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                用于治疗</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-3 py-4">
+                                <div class="text-sm font-medium text-gray-900">地昔帕明</div>
+                                <div class="text-xs text-gray-500">desipramine</div>
+                            </td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">Norpramin</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">150-300mg</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">low</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">low</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-yellow-600">+++++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 text-sm text-gray-900">抑郁障碍</td>
+                        </tr>
+
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-3 py-4">
+                                <div class="text-sm font-medium text-gray-900">阿米替林</div>
+                                <div class="text-xs text-gray-500">amitriptyline</div>
+                            </td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">Elavil</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">150-300mg</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">high</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">high</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-blue-600">++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-yellow-600">++++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 text-sm text-gray-900">MDD和各种疼痛症候群，如神经性疼痛、纤维肌痛、偏头痛和紧缩型头痛（因副作用大常作二线用药）
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-3 py-4">
+                                <div class="text-sm font-medium text-gray-900">去甲替林</div>
+                                <div class="text-xs text-gray-500">nortriptyline</div>
+                            </td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">Pamelor/Aventyl</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">75-125mg</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">mid</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">mid</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-green-600">+++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-blue-600">++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 text-sm text-gray-900">抑郁障碍，慢性神经疼痛，减少（化疗）唾液分泌</td>
+                        </tr>
+
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-3 py-4">
+                                <div class="text-sm font-medium text-gray-900">曲唑酮</div>
+                                <div class="text-xs text-gray-500">trazodone</div>
+                            </td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">Oleptro</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">150-400mg</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">mid</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">none</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-yellow-600">++++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 text-sm text-gray-900">MDD，焦虑障碍，（配合其他药品）酒精依赖</td>
+                        </tr>
+
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-3 py-4">
+                                <div class="text-sm font-medium text-gray-900">奈法唑酮</div>
+                                <div class="text-xs text-gray-500">nefazodone</div>
+                            </td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">generic only（截至2021）</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">100-300mg</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">mid</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">none</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-green-600">+++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 text-sm text-gray-900">抑郁障碍</td>
+                        </tr>
+
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-3 py-4">
+                                <div class="text-sm font-medium text-gray-900">氟西汀</div>
+                                <div class="text-xs text-gray-500">fluoxetine <span class="text-blue-600">(SSRI)</span>
+                                </div>
+                            </td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">Prozac/Sarafem</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">20-80mg</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">low</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">none</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-yellow-600">+++++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 text-sm text-gray-900">MDD，OCD，神经性暴食症，社交焦虑障碍</td>
+                        </tr>
+
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-3 py-4">
+                                <div class="text-sm font-medium text-gray-900">安非他酮</div>
+                                <div class="text-xs text-gray-500">bupropion</div>
+                            </td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">Wellbutrin</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">150-400mg</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">low</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">none</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-blue-600">++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-blue-600">++</td>
+                            <td class="px-3 py-4 text-sm text-gray-900">MDD，（防止）季节性情感障碍</td>
+                        </tr>
+
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-3 py-4">
+                                <div class="text-sm font-medium text-gray-900">舍曲林</div>
+                                <div class="text-xs text-gray-500">sertraline <span class="text-blue-600">(SSRI)</span>
+                                </div>
+                            </td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">Zoloft</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">50-200mg</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">low</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">none</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-yellow-600">++++++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-green-500">+</td>
+                            <td class="px-3 py-4 text-sm text-gray-900">MDD，GAD，社交焦虑障碍</td>
+                        </tr>
+
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-3 py-4">
+                                <div class="text-sm font-medium text-gray-900">帕罗西汀</div>
+                                <div class="text-xs text-gray-500">paroxetine <span class="text-blue-600">(SSRI)</span>
+                                </div>
+                            </td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">Paxil</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">20-50mg</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">low</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">low</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-green-500">+</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-yellow-600">+++++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 text-sm text-gray-900">MDD，OCD，社交焦虑障碍</td>
+                        </tr>
+
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-3 py-4">
+                                <div class="text-sm font-medium text-gray-900">文拉法辛</div>
+                                <div class="text-xs text-gray-500">venlafaxine <span
+                                        class="text-purple-600">(SNRI)</span></div>
+                            </td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">Effexor</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">75-350mg</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">low</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">none</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-green-600">+++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-green-600">+++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-green-500">+</td>
+                            <td class="px-3 py-4 text-sm text-gray-900">MDD，GAD</td>
+                        </tr>
+
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-3 py-4">
+                                <div class="text-sm font-medium text-gray-900">去甲文拉法辛</div>
+                                <div class="text-xs text-gray-500">desvenlafaxine</div>
+                            </td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">Pristiq</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">50-400mg</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">low</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">none</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-green-600">+++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-green-600">+++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-green-500">+</td>
+                            <td class="px-3 py-4 text-sm text-gray-900">MDD（效果似乎不如文拉法辛）</td>
+                        </tr>
+
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-3 py-4">
+                                <div class="text-sm font-medium text-gray-900">氟伏沙明</div>
+                                <div class="text-xs text-gray-500">fluvoxamine <span class="text-blue-600">(SSRI)</span>
+                                </div>
+                            </td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">Luvox</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">50-300mg</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">low</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">low</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-yellow-600">+++++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 text-sm text-gray-900">MDD，OCD</td>
+                        </tr>
+
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-3 py-4">
+                                <div class="text-sm font-medium text-gray-900">米氮平</div>
+                                <div class="text-xs text-gray-500">mirtazapine</div>
+                            </td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">Remeron</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">15-45mg</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">mid</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">mid</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-green-600">+++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-green-600">+++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 text-sm text-gray-900">抑郁障碍，OCD，有时用作止吐药和食欲促进剂</td>
+                        </tr>
+
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-3 py-4">
+                                <div class="text-sm font-medium text-gray-900">西酞普兰</div>
+                                <div class="text-xs text-gray-500">citalopram <span class="text-blue-600">(SSRI)</span>
+                                </div>
+                            </td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">Celexa</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">10-40mg</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">low</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">none</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-yellow-600">+++++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 text-sm text-gray-900">MDD，OCD，惊恐障碍，社交焦虑障碍</td>
+                        </tr>
+
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-3 py-4">
+                                <div class="text-sm font-medium text-gray-900">艾司西酞普兰</div>
+                                <div class="text-xs text-gray-500">escitalopram</div>
+                            </td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">Lexapro</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">5-20mg</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">low</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">none</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-yellow-600">+++++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 text-sm text-gray-900">MDD，GAD</td>
+                        </tr>
+
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-3 py-4">
+                                <div class="text-sm font-medium text-gray-900">度洛西汀</div>
+                                <div class="text-xs text-gray-500">duloxetine <span
+                                        class="text-purple-600">(SNRI)</span></div>
+                            </td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">Cymbalta</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">20-80mg</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">low</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">none</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-green-600">+++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-green-600">+++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 text-sm text-gray-900">MDD，GAD，纤维肌痛</td>
+                        </tr>
+
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-3 py-4">
+                                <div class="text-sm font-medium text-gray-900">维拉佐酮</div>
+                                <div class="text-xs text-gray-500">Vilazodone <span class="text-blue-600">(SSRI)</span>
+                                </div>
+                            </td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">Viibryd</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">10-40mg</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">low</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">low</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-yellow-600">+++++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 text-sm text-gray-900">MDD</td>
+                        </tr>
+
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-3 py-4">
+                                <div class="text-sm font-medium text-gray-900">阿托莫西汀</div>
+                                <div class="text-xs text-gray-500">atomoxetine <span
+                                        class="text-purple-600">(SNRI)</span></div>
+                            </td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">Strattera</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">60-120mg</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">low</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">low</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-yellow-600">+++++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 text-sm text-gray-900">ADHD（虽然由作用方式来定义它属于antidepressant）</td>
+                        </tr>
+
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-3 py-4">
+                                <div class="text-sm font-medium text-gray-900">维洛沙嗪</div>
+                                <div class="text-xs text-gray-500">viloxazine <span
+                                        class="text-purple-600">(SNRI)</span></div>
+                            </td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">Qelbree</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">200-600mg</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">low</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">low</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-yellow-600">++++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-green-500">+</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-green-500">+</td>
+                            <td class="px-3 py-4 text-sm text-gray-900">ADHD（虽然由作用方式来定义它也属于antidepressant）</td>
+                        </tr>
+
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-3 py-4">
+                                <div class="text-sm font-medium text-gray-900">伏硫西汀</div>
+                                <div class="text-xs text-gray-500">vortioxetine <span
+                                        class="text-blue-600">(SSRI)</span></div>
+                            </td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">Trintellix</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">10-20mg</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">mid</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">none</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-yellow-600">+++++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-green-500">+</td>
+                            <td class="px-3 py-4 text-sm text-gray-900">MDD</td>
+                        </tr>
+
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-3 py-4">
+                                <div class="text-sm font-medium text-gray-900">左旋米那普伦</div>
+                                <div class="text-xs text-gray-500">levomilnacipran</div>
+                            </td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">Fetzima</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">40-120mg</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">low</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">none</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-green-600">+++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-blue-600">++</td>
+                            <td class="px-3 py-4 whitespace-nowrap text-sm text-gray-900">0</td>
+                            <td class="px-3 py-4 text-sm text-gray-900">MDD</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="mb-12 bg-white rounded-lg shadow-lg overflow-hidden" data-category="atypical">
+            <div class="bg-gradient-to-r from-green-600 to-emerald-700 px-6 py-4">
+                <h2 class="text-xl font-semibold text-white">非典型抗抑郁药 (Atypical Antidepressants)</h2>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                通用名 / Generic</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                商品名 / Brand</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                注意事项</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-6 py-4">
+                                <div class="text-sm font-medium text-gray-900">(未找到中文名)</div>
+                                <div class="text-sm text-gray-500">brexanolone</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Zulresso</td>
+                            <td class="px-6 py-4 text-sm text-gray-900">
+                                用于治疗重度产后抑郁，需静脉注射持续60小时（从2023年上市的Zuranolone开始可以口服）</td>
+                        </tr>
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-6 py-4">
+                                <div class="text-sm font-medium text-gray-900">艾司氯胺酮</div>
+                                <div class="text-sm text-gray-500">esketamine</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Spravato</td>
+                            <td class="px-6 py-4 text-sm text-gray-900">
+                                用于治疗难治性抑郁障碍（对至少两种不同的抗抑郁药物以足够的剂量和足够的持续时间没有充分的反应，即抑郁症状减少不到25%）通常以鼻喷雾剂（nasal spray）的形式出现
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-6 py-4">
+                                <div class="text-sm font-medium text-gray-900">右美沙芬+安非他酮</div>
+                                <div class="text-sm text-gray-500">dextromethorphan+bupropion</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Auvelity</td>
+                            <td class="px-6 py-4 text-sm text-gray-900">用于治疗MDD，包括45mg右美沙芬+105mg安非他酮缓释剂</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- MAO Inhibitors -->
+        <div class="mb-12 bg-white rounded-lg shadow-lg overflow-hidden" data-category="maoi">
+            <div class="bg-gradient-to-r from-green-600 to-emerald-600 px-6 py-4">
+                <h2 class="text-xl font-semibold text-white">单胺氧化酶抑制剂 (MAO Inhibitors)</h2>
+                <p class="text-sm text-red-100 mt-1">注：单胺氧化酶负责降解多巴胺等神经递质（作用位于神经元内而非突触间隙！）</p>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                通用名</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                商品名</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                每日剂量</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                镇静</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                抗胆碱副作用</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                NE</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                5-HT</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                DA</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                用于治疗</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-6 py-4">
+                                <div class="text-sm font-medium text-gray-900">苯乙肼</div>
+                                <div class="text-sm text-gray-500">phenelzine</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Nardil</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">30-90mg</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">low</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">none</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-yellow-600">+++</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-yellow-600">+++</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-yellow-600">+++</td>
+                            <td class="px-6 py-4 text-sm text-gray-900">抑郁障碍，焦虑障碍</td>
+                        </tr>
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-6 py-4">
+                                <div class="text-sm font-medium text-gray-900">反苯环丙胺</div>
+                                <div class="text-sm text-gray-500">tranylcypromine</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Parnate</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">20-60mg</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">low</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">none</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-yellow-600">+++</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-yellow-600">+++</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-yellow-600">+++</td>
+                            <td class="px-6 py-4 text-sm text-gray-900">MDD，焦虑障碍，OCD</td>
+                        </tr>
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-6 py-4">
+                                <div class="text-sm font-medium text-gray-900">司来吉兰</div>
+                                <div class="text-sm text-gray-500">selegiline</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Emsam (patch)</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">6-12mg</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">low</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">none</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-yellow-600">+++</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-yellow-600">+++</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-yellow-600">+++</td>
+                            <td class="px-6 py-4 text-sm text-gray-900">抑郁障碍，（辅助）帕金森</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-sm text-gray-400 mb-2">
+                    网站建设与维护：Astrocyte | 原始资料版权归 John Peterson Psy.D. 所有
+                </p>
+                <p class="text-xs text-gray-500">
+                    本站内容仅供教育参考，请遵循相关版权协议和医疗法规
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+
+    <!-- Interactive functionality -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Search functionality
+        document.getElementById('search').addEventListener('input', function (e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const allTables = document.querySelectorAll('tbody tr');
+
+            allTables.forEach(row => {
+                const text = row.textContent.toLowerCase();
+                if (text.includes(searchTerm)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+
+        // Category filter
+        document.getElementById('category').addEventListener('change', function (e) {
+            const selectedCategory = e.target.value;
+            const sections = document.querySelectorAll('[data-category]');
+
+            if (selectedCategory === '') {
+                sections.forEach(section => section.style.display = '');
+            } else {
+                sections.forEach(section => {
+                    if (section.dataset.category === selectedCategory) {
+                        section.style.display = '';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

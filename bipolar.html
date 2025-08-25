@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>双相障碍药物 - 精神药品快速指南</title>
+</head>
+
+<body class="bg-orange-50 min-h-screen">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="/" class="text-xl font-bold text-indigo-600">请选择您想要了解的分类</a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="/"
+                            class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">主页</a>
+                        <a href="/antidepressants.html"
+                            class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">抗抑郁药物</a>
+                        <a href="/bipolar.html"
+                            class="text-indigo-600 bg-indigo-50 px-3 py-2 rounded-md text-sm font-medium">双相药物</a>
+                        <a href="/stimulants.html"
+                            class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">中枢兴奋剂</a>
+                        <a href="/antipsychotics.html"
+                            class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">抗精神病药物</a>
+                        <a href="/anti-anxiety.html"
+                            class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">抗焦虑药物</a>
+                        <a href="/hypnotics.html"
+                            class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">安眠药</a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button"
+                        class="text-gray-700 hover:text-indigo-600 focus:outline-none focus:text-indigo-600">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-50">
+                    <a href="/" class="text-gray-700 block px-3 py-2 rounded-md text-base font-medium">主页</a>
+                    <a href="/antidepressants.html"
+                        class="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">抗抑郁药物</a>
+                    <a href="/bipolar.html"
+                        class="text-indigo-600 bg-indigo-50 block px-3 py-2 rounded-md text-base font-medium">双相药物</a>
+                    <a href="/stimulants.html"
+                        class="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">中枢兴奋剂</a>
+                    <a href="/antipsychotics.html"
+                        class="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">抗精神病药物</a>
+                    <a href="/anti-anxiety.html"
+                        class="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">抗焦虑药物</a>
+                    <a href="/hypnotics.html"
+                        class="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">安眠药</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <!-- Icon -->
+                <div class="flex justify-center mb-6">
+                    <div class="bg-white rounded-full p-4 shadow-lg">
+                        <svg class="h-16 w-16 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Title -->
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                    Bipolar Disorder Medications
+                    <span class="block text-orange-700 text-3xl md:text-4xl mt-2">双相药物</span>
+                </h1>
+
+                <!-- Description -->
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    用于治疗双相情感障碍的情绪稳定剂和相关药物信息速查表
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <!-- Search and Info -->
+        <div class="mb-8">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div
+                    class="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0 md:space-x-4">
+                    <!-- Search -->
+                    <div class="flex-1">
+                        <label for="search" class="block text-sm font-medium text-gray-700 mb-2">搜索药物</label>
+                        <input type="text" id="search" placeholder="输入通用名或商品名..."
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+                    </div>
+
+                    <!-- Quick Stats -->
+                    <div class="flex-shrink-0">
+                        <div class="bg-orange-50 rounded-lg p-4">
+                            <div class="text-sm text-gray-600">共收录</div>
+                            <div class="text-2xl font-bold text-orange-600">6</div>
+                            <div class="text-sm text-gray-600">种药物</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Bipolar Medications Table -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <!-- Table Header -->
+            <div class="bg-gradient-to-r from-orange-600 to-red-700 px-6 py-4">
+                <h2 class="text-xl font-semibold text-white">药物信息表</h2>
+            </div>
+
+            <!-- Table Container -->
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <!-- Table Head -->
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                通用名 / Generic
+                            </th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                商品名 / Brand
+                            </th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                每日剂量 (mg)
+                            </th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                血清水平
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <!-- Table Body -->
+                    <tbody class="bg-white divide-y divide-gray-200" id="bipolar-table">
+                        <tr class="hover:bg-orange-50 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">碳酸锂</div>
+                                <div class="text-sm text-gray-500">lithium carbonate</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                Eskalith/Lithonate
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                600-2400
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-orange-600 font-medium">
+                                0.6-1.5 mEq/L
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-orange-50 transition-colors">
+                            <td class="px-6 py-4">
+                                <div class="text-sm font-medium text-gray-900">奥氮平/氟西汀</div>
+                                <div class="text-sm text-gray-500">olanzapine/fluoxetine</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                Symbyax
+                            </td>
+                            <td class="px-6 py-4 text-sm text-gray-900">
+                                6/25 或 6/50 或 12/25 或 12/50mg
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">
+                                —
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-orange-50 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">卡马西平</div>
+                                <div class="text-sm text-gray-500">carbamazepine</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                Tegretol/Equetrol
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                600-1600
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-orange-600 font-medium">
+                                4-10 mcg/ml
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-orange-50 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">丙戊酸</div>
+                                <div class="text-sm text-gray-500">divalproex</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                Depakote
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                750-1500
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-orange-600 font-medium">
+                                50-100 mcg/ml
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-orange-50 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">拉莫三嗪</div>
+                                <div class="text-sm text-gray-500">lamotrigine</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                Lamictal
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                50-500
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">
+                                —
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-orange-50 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">奥卡西平</div>
+                                <div class="text-sm text-gray-500">oxcarbazepine</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                Trileptal
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                1200-2400
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">
+                                —
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Table Footer Info -->
+            <div class="bg-gray-50 px-6 py-3 border-t">
+                <div class="text-sm text-gray-600">
+                    <strong>说明：</strong>
+                    <span class="text-orange-600 font-medium">有血清水平数值</span>的药物需要定期监测血药浓度，
+                    <span class="text-gray-400">标记为 "—"</span> 的药物通常不需要常规血清水平监测。
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Information -->
+        <div class="mt-8">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">重要提醒</h3>
+                <div class="space-y-3 text-sm text-gray-700">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3"></div>
+                        </div>
+                        <p><strong>碳酸锂</strong>是经典的情感稳定剂，需要定期监测血锂浓度和肾功能</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3"></div>
+                        </div>
+                        <p><strong>抗癫痫药物</strong>如卡马西平、丙戊酸、拉莫三嗪也常用作情感稳定剂</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3"></div>
+                        </div>
+                        <p><strong>复合制剂</strong>如奥氮平/氟西汀结合了抗精神病药物和抗抑郁药物</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-sm text-gray-400 mb-2">
+                    网站建设与维护：Astrocyte | 原始资料版权归 John Peterson Psy.D. 所有
+                </p>
+                <p class="text-xs text-gray-500">
+                    本站内容仅供教育参考，请遵循相关版权协议和医疗法规
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+
+    <!-- Interactive functionality -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Search functionality
+        document.getElementById('search').addEventListener('input', function (e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const rows = document.querySelectorAll('#bipolar-table tr');
+
+            rows.forEach(row => {
+                const text = row.textContent.toLowerCase();
+                if (text.includes(searchTerm)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
