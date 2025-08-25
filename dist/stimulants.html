@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>中枢兴奋剂 - 精神药品快速指南</title>
+</head>
+
+<body class="bg-yellow-50 min-h-screen">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="/" class="text-xl font-bold text-indigo-600">请选择您想要了解的分类</a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="/"
+                            class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">主页</a>
+                        <a href="/antidepressants.html"
+                            class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">抗抑郁药物</a>
+                        <a href="/bipolar.html"
+                            class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">双相药物</a>
+                        <a href="/stimulants.html"
+                            class="text-indigo-600 bg-indigo-50 px-3 py-2 rounded-md text-sm font-medium">中枢兴奋剂</a>
+                        <a href="/antipsychotics.html"
+                            class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">抗精神病药物</a>
+                        <a href="/anti-anxiety.html"
+                            class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">抗焦虑药物</a>
+                        <a href="/hypnotics.html"
+                            class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">安眠药</a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button"
+                        class="text-gray-700 hover:text-indigo-600 focus:outline-none focus:text-indigo-600">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-50">
+                    <a href="/" class="text-gray-700 block px-3 py-2 rounded-md text-base font-medium">主页</a>
+                    <a href="/antidepressants.html"
+                        class="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">抗抑郁药物</a>
+                    <a href="/bipolar.html"
+                        class="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">双相药物</a>
+                    <a href="/stimulants.html"
+                        class="text-indigo-600 bg-indigo-50 block px-3 py-2 rounded-md text-base font-medium">中枢兴奋剂</a>
+                    <a href="/antipsychotics.html"
+                        class="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">抗精神病药物</a>
+                    <a href="/anti-anxiety.html"
+                        class="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">抗焦虑药物</a>
+                    <a href="/hypnotics.html"
+                        class="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">安眠药</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <!-- Icon -->
+                <div class="flex justify-center mb-6">
+                    <div class="bg-white rounded-full p-4 shadow-lg">
+                        <svg class="h-16 w-16 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Title -->
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                    Psycho-Stimulants
+                    <span class="block text-yellow-600 text-3xl md:text-4xl mt-2">中枢兴奋剂</span>
+                </h1>
+
+                <!-- Description -->
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    用于治疗注意缺陷多动障碍（ADHD）和发作性睡病的药物信息速查表
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <!-- Search and Filter -->
+        <div class="mb-8">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div
+                    class="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0 md:space-x-4">
+                    <!-- Search -->
+                    <div class="flex-1">
+                        <label for="search" class="block text-sm font-medium text-gray-700 mb-2">搜索药物</label>
+                        <input type="text" id="search" placeholder="输入通用名或商品名..."
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
+                    </div>
+
+                    <!-- Active Ingredient Filter -->
+                    <div class="flex-shrink-0">
+                        <label for="ingredient" class="block text-sm font-medium text-gray-700 mb-2">活性成分</label>
+                        <select id="ingredient"
+                            class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
+                            <option value="">全部成分</option>
+                            <option value="methylphenidate">哌甲酯</option>
+                            <option value="amphetamine">安非他命类</option>
+                            <option value="modafinil">莫达非尼类</option>
+                        </select>
+                    </div>
+
+                    <!-- Quick Stats -->
+                    <div class="flex-shrink-0">
+                        <div class="bg-yellow-50 rounded-lg p-4">
+                            <div class="text-sm text-gray-600">共收录</div>
+                            <div class="text-2xl font-bold text-yellow-600">16</div>
+                            <div class="text-sm text-gray-600">种药物</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Stimulants Table -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <!-- Table Header -->
+            <div class="bg-gradient-to-r from-yellow-600 to-orange-600 px-6 py-4">
+                <h2 class="text-xl font-semibold text-white">中枢兴奋剂 (Psycho-Stimulants)</h2>
+            </div>
+
+            <!-- Table Container -->
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <!-- Table Head -->
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                通用名 / Generic
+                            </th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                商品名 / Brand
+                            </th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                每日剂量 mg（成人）
+                            </th>
+
+                        </tr>
+                    </thead>
+
+                    <!-- Table Body -->
+                    <tbody class="bg-white divide-y divide-gray-200" id="stimulants-table">
+                        <!-- Methylphenidate Group -->
+                        <tr class="hover:bg-yellow-50 transition-colors" data-ingredient="methylphenidate">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">哌甲酯</div>
+                                <div class="text-sm text-gray-500">methylphenidate</div>
+                            </td>
+                            <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-900">Ritalin</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">5-50</td>
+
+                        </tr>
+
+                        <tr class="hover:bg-yellow-50 transition-colors" data-ingredient="methylphenidate">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">哌甲酯</div>
+                                <div class="text-sm text-gray-500">methylphenidate</div>
+                            </td>
+                            <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-900">Concerta</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">18-54</td>
+
+                        </tr>
+
+                        <tr class="hover:bg-yellow-50 transition-colors" data-ingredient="methylphenidate">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">哌甲酯</div>
+                                <div class="text-sm text-gray-500">methylphenidate</div>
+                            </td>
+                            <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-900">Metadate</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">5-40</td>
+
+                        </tr>
+
+                        <tr class="hover:bg-yellow-50 transition-colors" data-ingredient="methylphenidate">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">哌甲酯</div>
+                                <div class="text-sm text-gray-500">methylphenidate</div>
+                            </td>
+                            <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-900">Methylin</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">10-60</td>
+
+                        </tr>
+
+                        <tr class="hover:bg-yellow-50 transition-colors" data-ingredient="methylphenidate">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">哌甲酯</div>
+                                <div class="text-sm text-gray-500">methylphenidate</div>
+                            </td>
+                            <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-900">Daytrana(patch)</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">15-30</td>
+
+                        </tr>
+
+                        <tr class="hover:bg-yellow-50 transition-colors" data-ingredient="methylphenidate">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">哌甲酯</div>
+                                <div class="text-sm text-gray-500">methylphenidate</div>
+                            </td>
+                            <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-900">Quillivant XR</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">10-60</td>
+
+                        </tr>
+
+                        <tr class="hover:bg-yellow-50 transition-colors" data-ingredient="methylphenidate">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">右哌甲酯</div>
+                                <div class="text-sm text-gray-500">dexmethylphenidate</div>
+                            </td>
+                            <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-900">Focalin</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">5-40</td>
+
+                        </tr>
+
+                        <!-- Amphetamine Group -->
+                        <tr class="hover:bg-yellow-50 transition-colors" data-ingredient="amphetamine">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">右旋安非他命</div>
+                                <div class="text-sm text-gray-500">dextroamphetamine</div>
+                            </td>
+                            <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-900">Dexedrine</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">5-40</td>
+
+                        </tr>
+
+                        <tr class="hover:bg-yellow-50 transition-colors" data-ingredient="amphetamine">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">右旋安非他命</div>
+                                <div class="text-sm text-gray-500">dextroamphetamine</div>
+                            </td>
+                            <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-900">Xelstrym</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">9-18</td>
+
+                        </tr>
+
+                        <tr class="hover:bg-yellow-50 transition-colors" data-ingredient="amphetamine">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">利右苯丙胺</div>
+                                <div class="text-sm text-gray-500">lisdexamphetamine</div>
+                            </td>
+                            <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-900">Vyvanse</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">30-70</td>
+
+                        </tr>
+
+                        <tr class="hover:bg-yellow-50 transition-colors" data-ingredient="amphetamine">
+                            <td class="px-6 py-4">
+                                <div class="text-sm font-medium text-gray-900">安非他命盐</div>
+                                <div class="text-sm text-gray-500 text-xs">外消旋安非他命，即等量的d-amphetamine和l-amphetamine</div>
+                            </td>
+                            <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-900">Adderall</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">5-40</td>
+
+                        </tr>
+
+                        <tr class="hover:bg-yellow-50 transition-colors" data-ingredient="amphetamine">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">安非他命盐</div>
+                                <div class="text-sm text-gray-500">amphetamine salts</div>
+                            </td>
+                            <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-900">Mydayis</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">12.5-50</td>
+
+                        </tr>
+
+                        <tr class="hover:bg-yellow-50 transition-colors" data-ingredient="amphetamine">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">安非他命盐</div>
+                                <div class="text-sm text-gray-500">amphetamine salts</div>
+                            </td>
+                            <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-900">Evekeo</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">5-40</td>
+
+                        </tr>
+
+                        <tr class="hover:bg-yellow-50 transition-colors" data-ingredient="amphetamine">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">安非他命硫酸盐</div>
+                                <div class="text-sm text-gray-500">amphetamine sulfate</div>
+                            </td>
+                            <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-900">Adzenys</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">3.1-18.8</td>
+
+                        </tr>
+
+                        <!-- Modafinil Group -->
+                        <tr class="hover:bg-yellow-50 transition-colors" data-ingredient="modafinil">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">莫达非尼</div>
+                                <div class="text-sm text-gray-500">modafinil</div>
+                            </td>
+                            <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-900">Provigil/Sparlon</td>
+
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">100-400</td>
+
+                        </tr>
+
+                        <tr class="hover:bg-yellow-50 transition-colors" data-ingredient="modafinil">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">阿莫达非尼</div>
+                                <div class="text-sm text-gray-500">armodafinil</div>
+                            </td>
+                            <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-900">Nuvigil</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">150-250</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+
+        <!-- ADHD Tips Section (Special for ADHD gang!) -->
+        <div class="mt-8">
+            <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-yellow-500">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                    <svg class="h-5 w-5 text-yellow-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                    </svg>
+                    注意事项
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700">
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3"></div>
+                            </div>
+                            <p><strong>速释 vs 缓释</strong>：速释药物起效快但持续时间短（3-4小时），缓释药物持续时间长（8-12小时）</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3"></div>
+                            </div>
+                            <p><strong>贴片剂型</strong>：适合不能吞服药片的人群，提供稳定的药物释放</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3"></div>
+                            </div>
+                            <p><strong>液体制剂</strong>：便于剂量调整，适合儿童</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Drug Categories Info -->
+        <div class="mt-8">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">分类说明</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Methylphenidate -->
+                    <div class="border border-blue-200 rounded-lg p-4">
+                        <h4 class="font-medium text-blue-800 mb-2 flex items-center">
+                            <div class="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>
+                            哌甲酯类
+                        </h4>
+                        <p class="text-sm text-gray-600 mb-2">阻断多巴胺和去甲肾上腺素的再摄取</p>
+                        <div class="text-xs text-gray-500">
+                            <p>• Ritalin, Concerta </p>
+                            <p>• 贴片: Daytrana</p>
+                            <p>• 液体: Quillivant XR</p>
+                        </div>
+                    </div>
+
+                    <!-- Amphetamine -->
+                    <div class="border border-red-200 rounded-lg p-4">
+                        <h4 class="font-medium text-red-800 mb-2 flex items-center">
+                            <div class="w-3 h-3 bg-red-500 rounded-full mr-2"></div>
+                            安非他命类
+                        </h4>
+                        <p class="text-sm text-gray-600 mb-2">促进多巴胺和去甲肾上腺素的释放</p>
+                        <div class="text-xs text-gray-500">
+                            <p>• Adderall (混合盐)</p>
+                            <p>• Vyvanse (前体药物)</p>
+                            <p>• Dexedrine (右旋体)</p>
+                        </div>
+                    </div>
+
+                    <!-- Modafinil -->
+                    <div class="border border-indigo-200 rounded-lg p-4">
+                        <h4 class="font-medium text-indigo-800 mb-2 flex items-center">
+                            <div class="w-3 h-3 bg-indigo-500 rounded-full mr-2"></div>
+                            莫达非尼类
+                        </h4>
+                        <p class="text-sm text-gray-600 mb-2">主要用于发作性睡病</p>
+                        <div class="text-xs text-gray-500">
+                            <p>• Provigil (莫达非尼)</p>
+                            <p>• Nuvigil (阿莫达非尼)</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-sm text-gray-400 mb-2">
+                    网站建设与维护：Astrocyte | 原始资料版权归 John Peterson Psy.D. 所有
+                </p>
+                <p class="text-xs text-gray-500">
+                    本站内容仅供教育参考，请遵循相关版权协议和医疗法规
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+
+    <!-- Interactive functionality -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Search functionality
+        document.getElementById('search').addEventListener('input', function (e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const rows = document.querySelectorAll('#stimulants-table tr');
+
+            rows.forEach(row => {
+                const text = row.textContent.toLowerCase();
+                if (text.includes(searchTerm)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+
+        // Ingredient filter
+        document.getElementById('ingredient').addEventListener('change', function (e) {
+            const selectedIngredient = e.target.value;
+            const rows = document.querySelectorAll('#stimulants-table tr[data-ingredient]');
+
+            if (selectedIngredient === '') {
+                rows.forEach(row => row.style.display = '');
+            } else {
+                rows.forEach(row => {
+                    if (row.dataset.ingredient === selectedIngredient) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
