@@ -11,7 +11,7 @@ export default defineConfig({
                 main: 'index.html',
                 antidepressants: 'antidepressants.html',
                 antipsychotics: 'antipsychotics.html',
-                hyptonics: 'hyptonics.html',
+                hypnotics: 'hyptonics.html',
                 bipolar: 'bipolar.html',
                 stimulants: 'stimulants.html',
                 antianxiety: 'anti-anxiety.html'
